@@ -17,10 +17,39 @@ Grey box testing is a combination of both black and white, where we can have cer
 For the purposes of this classifier, I have decided to go with grey box testing. This gives us a good balance between creating high quality tests as well as accounting for the unknown. While there may be difficulty in ensuring we strike a good balance between those two aspects, I have decided to mitgate that risk by creating the tests first, and then, create the classifer.
 
 # 3. Test Cases
+Multiple test cases for neural network functionality will be created. The main focus will be on three sections. These are, feedforward, backpropation, and general tests. For the purposes of this testing, we will be utilizing the testing framework JUnit.
+
+### 3.1 Feedforward Tests
+Feedforward tests will be based around the perceptron convergence theorem. This theorem states that a perceptron cannot converge i.e., create a suitable hyperplane to predict the data label, if the data itself is not linearly seperably. This means that a single perceptron cannot solve a binary XOR logic gate. To get around this issue, one can use multi-layered perceptrons, which in essence, is the same as a neural network. Since feedforward tests are based off an XOR logic gate, we already have at minimum four test cases.
+
+#### Test case 01: Feedforward
+| Input | Expected Output |
+| ------ | ------ |
+| {0, 0} | {0} |
+
+#### Test case 02: Feedforward
+| Input | Expected Output |
+| ------ | ------ |
+| {1, 0} | {1} |
+
+#### Test case 03: Feedforward
+| Input | Expected Output |
+| ------ | ------ |
+| {0, 1} | {1} |
+
+#### Test case 04: Feedforward
+| Input | Expected Output |
+| ------ | ------ |
+| {1, 1} | {0} |
+
+### 3.2 Backpropagation Tests
+
+### 3.3 General Tests
+
 
 # 4. Test Data
 
 # 5. Summary Report
 
-Last Updated: 06/07/2023
+Last Updated: 20/07/2023<br><s>06/07/2023</s>
 
